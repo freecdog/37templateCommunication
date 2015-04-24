@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title= "template communication"
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        p Welcome to template communication
+        p Counter value: #{counterValue.value}
+        p
+            a(href="/") refresh
+        p
+            a(href="/api/double") double
+        p
+            a(href="/api/zero") zero
+        p
+            a(href="/api/valuesfrom/#{counterValue.id}") counters from id: #{counterValue.id}
+        p
+            a(href="/api/db") all counter values
